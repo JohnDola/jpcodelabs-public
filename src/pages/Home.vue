@@ -19,7 +19,7 @@ import AppFooter from '../components/AppFooter.vue'
         <div id="hero" class="-mt-20 ">
             <HeroSection />
         </div>
-        <ProblemSection class="" />
+        <ProblemSection />
         <div id="solution">
             <SolutionSection />
         </div>
