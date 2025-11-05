@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hero Background Image */
+.hero-bg-image {
+  background-image: url('@/assets/hero/hero6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hero Background Overlay (Light Overlay for Better Text Contrast) */
+.hero-bg-overlay {
+  background: black;
+  opacity: 0.5;
+}
+
+/* Static Hero Gradient (fallback if no image) */
+.hero-gradient {
+  background: linear-gradient(135deg, #fff5eb 0%, #fed7aa 50%, #fb923c 100%);
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
