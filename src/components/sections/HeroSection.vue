@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ArrowRight, Sparkles } from 'lucide-vue-next'
-import Button from '../ui/Button.vue'
 
 const scrollToContact = () => {
     const contactSection = document.getElementById('contact')

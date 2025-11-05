@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Search, Code, CheckCircle, ArrowRight } from 'lucide-vue-next'
+import { CheckCircle, ArrowRight } from 'lucide-vue-next'
 
 const scrollToContact = () => {
     const contactSection = document.getElementById('contact')
