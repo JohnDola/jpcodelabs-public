@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>JPCodelabs</title>
     <script>
-      // SPA-Routing für GitHub Pages
-      var l = window.location;
-      var path = l.pathname.slice(1); // Entferne leading slash
-      if (path) {
-        // Umleitung mit Query-String für Vue Router
-        window.location.href = '/?/' + path + (l.search ? '&' + l.search.slice(1) : '') + l.hash;
-      } else {
-        window.location.href = '/';
+      // SPA-Routing für GitHub Pages - sessionStorage Methode
+      var path = window.location.pathname;
+      if (path !== '/' && path !== '/index.html') {
+        // Speichere die Route in sessionStorage
+        sessionStorage.setItem('redirect', path);
+        // Leitet auf die Startseite um
+        window.location.replace('/');
       }
     </script>
   </head>
