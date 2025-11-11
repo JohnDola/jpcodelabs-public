@@ -7,8 +7,21 @@
       // SPA-Routing für GitHub Pages - sessionStorage Methode
       var path = window.location.pathname;
       if (path !== '/' && path !== '/index.html') {
-        // Speichere die Route in sessionStorage
-        sessionStorage.setItem('redirect', path);
+        // Speichere die Route in sessionStorage mit Section-Info
+        var redirectData = { path: path };
+
+        // Bestimme Section basierend auf dem Path (inkl. Redirects)
+        if (path === '/about' || path === '/about-us') {
+          redirectData.section = 'about';
+        } else if (path === '/services' || path === '/our-approach') {
+          redirectData.section = 'services';
+        } else if (path === '/use-cases') {
+          redirectData.section = 'use-cases';
+        } else if (path === '/contact' || path === '/contact-us') {
+          redirectData.section = 'contact';
+        }
+
+        sessionStorage.setItem('redirect', JSON.stringify(redirectData));
         // Leitet auf die Startseite um
         window.location.replace('/');
       }
