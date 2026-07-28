@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Bild folgt">
+  <rect width="1600" height="900" fill="#1e293b"/>
+  <rect x="8" y="8" width="1584" height="884" rx="24" fill="none" stroke="#334155" stroke-width="4" stroke-dasharray="18 14"/>
+  <g transform="translate(800 410)" fill="none" stroke="#22d3ee" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <rect x="-120" y="-90" width="240" height="180" rx="16"/>
+    <circle cx="-55" cy="-30" r="26"/>
+    <path d="M-120 70 L-30 -6 L28 46 L70 8 L120 70"/>
+  </g>
+  <text x="800" y="600" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="700" fill="#cbd5e1">Bild folgt</text>
+</svg>
